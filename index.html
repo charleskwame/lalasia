@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="scroll-smooth">
+    <!-- nav -->
+    <div class="fixed w-4/4 top-0 right-0 left-0 bg-white z-40">
+      <nav
+        class="flex items-center justify-between mx-[24px] my-5 lg:my-10 lg:mx-24"
+      >
+        <!-- mobile -->
+        <div class="lg:w-32 w-24">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+
+        <!-- desktop -->
+
+        <div class="hidden lg:flex items-center justify-evenly gap-[60px]">
+          <a
+            href="#products"
+            class="font-light text-lg italic hover:underline-offset-8 hover:underline hover:decoration-[#518581] hover:decoration-[3px] hover:font-semibold hover:text-[#518581]"
+            >Products</a
+          >
+          <a
+            href="#"
+            class="font-light text-lg italic hover:underline-offset-8 hover:underline hover:decoration-[#518581] hover:decoration-[3px] hover:font-semibold hover:text-[#518581]"
+            >Services</a
+          >
+          <a
+            href="#articles"
+            class="font-light text-lg italic hover:underline-offset-8 hover:underline hover:decoration-[#518581] hover:decoration-[3px] hover:font-semibold hover:text-[#518581]"
+            >Articles</a
+          >
+          <a
+            href="#"
+            class="font-light text-lg italic hover:underline-offset-8 hover:underline hover:decoration-[#518581] hover:decoration-[3px] hover:font-semibold hover:text-[#518581]"
+            >About Us</a
+          >
+        </div>
+
+        <div class="flex items-center justify-center gap-5">
+          <div class="w-7 lg:w-full">
+            <a href="#products">
+              <img src="./assets/bag-2.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="w-7 lg:w-full">
+            <a href="#">
+              <img src="./assets/user.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- test mobile menu -->
+      </nav>
+
+      <hr class="" />
+    </div>
+
+    <main class="mx-[24px] lg:mx-24 mt-32 lg:mt-52">
+      <!-- hero -->
+      <div>
+        <h3
+          class="font-bold text-[26px] lg:text-[64px] text-center lg:w-3/4 lg:mx-auto"
+        >
+          Discover Furniture With High Quality Wood
+        </h3>
+
+        <p
+          class="text-center text-[14px] font-light italic lg:text-[18px] lg:w-3/4 lg:mx-auto mt-5 lg:mt-[30px]"
+        >
+          Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
+          placerat nisi, adipiscing mauris non. Purus parturient viverra nunc,
+          tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor.
+        </p>
+      </div>
+
+      <!-- search bar -->
+      <div
+        class="mx-auto lg:w-fit lg:bg-white px-4 py-2 lg:py-[15px] lg:px-[15px] border-t-2 border-b-2 lg:border-2 mt-[55px] mb-[30px] lg:z-20 relative"
+      >
+        <div class="flex justify-center border-2 border-white items-center">
+          <input
+            type="text"
+            placeholder="search product"
+            class="focus:outline-none bg-origin-content focus:bg-none focus:placeholder:text-transparent bg-no-repeat placeholder:text-center focus:border-b-2 focus:border-[#518581] py-3 lg:pr-[300px]"
+          />
+          <button
+            class="bg-[#518581] text-white font-semibold hover:bg-[#2c5f5b] px-[40px] py-[10px]"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- img after search -->
+      <div class="w-fit mx-auto lg:relative bottom-20 z-0 -mt-2">
+        <img src="./assets/search img.svg" alt="" />
+      </div>
+
+      <!-- product section -->
+      <section class="pt-[100px] lg:pt-[140px]" id="products">
+        <div class="grid items-center justify-center gap-2">
+          <h6
+            class="text-[14px] text-[#FFB23F] font-bold text-center lg:text-[18px]"
+          >
+            Product
+          </h6>
+
+          <h3 class="font-bold text-2xl lg:text-[44px]">
+            Our popular products
+          </h3>
+        </div>
+
+        <!-- product slide -->
+        <div
+          id="scroll"
+          class="snap-x lg:mt-10 grid grid-flow-col overflow-x-auto mt-5 lg:overflow-hidden lg:justify-center scroll-smooth"
+        >
+          <div class="bg-white snap-center w-60 py-3 grid justify-center">
+            <img
+              src="./assets/chair-pillow_176382-882.jpg"
+              alt=""
+              class="w-52 h-52 border-2"
+            />
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+
+            <div>
+              <h1 class="text-base font-semibold mt-2">
+                Black and White Porch Chair
+              </h1>
+
+              <p class="italic text-sm font-thin">Built to last</p>
+            </div>
+
+            <p class="font-semibold opacity-70 text-base text-right mb-1">
+              GHc 399.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="bg-white snap-center p-3 w-60 py-3 grid justify-center">
+            <img
+              src="./assets/chair-pillow_176382-873.jpg"
+              alt=""
+              class="w-52 h-52 border-2"
+            />
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+
+            <div>
+              <h1 class="text-base font-semibold mt-2">
+                Off-White Office Side Chair
+              </h1>
+
+              <p class="italic text-sm font-thin">Comfortable and elegant</p>
+            </div>
+
+            <p class="font-semibold opacity-70 text-base text-right mb-1">
+              GHc 499.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="bg-white snap-center p-3 w-60 py-3 grid justify-center">
+            <img src="./assets/9507.jpg" alt="" class="w-52 h-52 border-2" />
+
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+
+            <div>
+              <h1 class="text-base font-semibold mt-2">Red Fire-Side Chair</h1>
+
+              <p class="italic text-sm font-thin">Steady and Strong</p>
+            </div>
+
+            <p class="font-semibold opacity-70 text-base text-right mb-1">
+              GHc 699.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="bg-white snap-center p-3 w-60 py-3 grid justify-center">
+            <img
+              src="./assets/2009.i123.015.P.m004.c33.interior elements realistic set-09.jpg"
+              alt=""
+              class="w-52 h-52 border-2"
+            />
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+
+            <div>
+              <h1 class="text-base font-semibold mt-2">
+                Purple Waiting Room Chair
+              </h1>
+
+              <p class="italic text-sm font-thin">
+                For maximum client comfort while they wait
+              </p>
+            </div>
+
+            <p class="font-semibold opacity-70 text-base text-right mb-1">
+              GHc 399.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div
+            class="bg-white snap-center p-3 w-60 py-3 grid justify-center lg:hidden"
+          >
+            <img
+              src="./assets/chair-pillow_176382-869.jpg"
+              alt=""
+              class="w-52 h-52 border-2"
+            />
+
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+
+            <div>
+              <h1 class="text-base font-bold mt-2">360 Armless Beauty Chair</h1>
+
+              <p class="italic text-sm font-thin">
+                100% organically sourced feathers make for maximum comfort
+              </p>
+            </div>
+
+            <p class="font-semibold text-base opacity-70 text-right mb-1">
+              GHc 799.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div
+            class="bg-white snap-center p-3 w-60 py-3 grid justify-center lg:hidden"
+          >
+            <img
+              src="./assets/chair-pillow_176382-878.jpg"
+              alt=""
+              class="w-52 h-52 border-2"
+            />
+
+            <!-- <p class="text-xs text-[#AFADB5] mt-2">Chair</p> -->
+            <div>
+              <h1 class="text-base font-semibold mt-2">Outdoor Dining Chair</h1>
+
+              <p class="italic text-sm font-thin">
+                Perfect for bringing loved ones together
+              </p>
+            </div>
+
+            <p class="font-semibold opacity-70 text-base text-right mb-1">
+              GHc 299.99
+            </p>
+
+            <button
+              class="bg-[#518581] px-4 py-2 text-white font-semibold hover:bg-[#2c5f5b]"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- benefits -->
+      <section class="mt-[100px] lg:mt-[140px]">
+        <!-- benefits -->
+        <div class="lg:flex items-center justify-between gap-[290px]">
+          <div>
+            <h6 class="font-bold text-[14px] lg:text-[18px] text-[#FFB23F]">
+              Benefits
+            </h6>
+
+            <h2 class="font-bold text-[24px] lg:text-[44px]">
+              Benefits when using our services
+            </h2>
+          </div>
+
+          <p class="italic font-light text-sm mt-4 lg:mt-0">
+            Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+            dignissim placerat nisi, adipiscing mauris non purus parturient.
+          </p>
+        </div>
+
+        <div class="lg:flex items-center gap-5">
+          <!-- more benefits -->
+          <div
+            class="px-4 py-[18px] lg:w-[394px] mt-[30px] lg:mt-[91px] bg-white shadow-lg lg:drop-shadow-xl"
+          >
+            <!-- many choices card -->
+            <div class="w-[44px] h-[44px lg:w-full lg:h-full]">
+              <img src="./assets/many choices.svg" alt="" />
+            </div>
+
+            <h6 class="font-bold text-base mt-[14px] lg:text-2xl">
+              Many Choices
+            </h6>
+
+            <p class="font-light text-sm italic pt-[6px] lg:text-lg">
+              Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+              dignissim placerat nisi, adipiscing mauris non.
+            </p>
+          </div>
+
+          <div
+            class="px-4 py-[18px] lg:w-[394px] mt-[30px] lg:mt-[91px] bg-white shadow-lg lg:drop-shadow-xl"
+          >
+            <!-- fast and on time card -->
+            <div class="w-[44px] h-[44px lg:w-full lg:h-full]">
+              <img src="./assets/fast and on time.svg" alt="" />
+            </div>
+
+            <h6 class="font-bold text-base mt-[14px] lg:text-2xl">
+              Fast And On Time
+            </h6>
+
+            <p class="font-light text-sm italic pt-[6px] lg:text-lg">
+              Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+              dignissim placerat nisi, adipiscing mauris non.
+            </p>
+          </div>
+
+          <div
+            class="px-4 py-[18px] lg:w-[394px] mt-[30px] lg:mt-[91px] bg-white shadow-lg lg:drop-shadow-xl"
+          >
+            <!-- Affordable card -->
+            <div class="w-[44px] h-[44px lg:w-full lg:h-full]">
+              <img src="./assets/affordable price.svg" alt="" />
+            </div>
+
+            <h6 class="font-bold text-base mt-[14px] lg:text-2xl">
+              Affordable Price
+            </h6>
+
+            <p class="font-light text-sm italic pt-[6px] lg:text-lg">
+              Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+              dignissim placerat nisi, adipiscing mauris non.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+      <section class="mt-[100px] lg:mt-[140px]">
+        <!-- testimonials -->
+        <div class="grid items-center justify-center gap-2 lg:gap-4">
+          <h6
+            class="text-[14px] text-[#FFB23F] font-bold text-center lg:text-[18px]"
+          >
+            Testimonials
+          </h6>
+
+          <h3 class="font-bold text-2xl lg:text-[44px] text-center">
+            What our customers say
+          </h3>
+
+          <p
+            class="font-light text-sm italic pt-[6px] lg:w-3/4 mx-auto lg:text-lg text-center"
+          >
+            Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+            dignissim placerat nisi, adipiscing mauris non purus parturient.
+          </p>
+        </div>
+
+        <!-- testimonial slides -->
+        <div
+          id="scroll"
+          class="grid grid-flow-col overflow-x-auto scroll-smooth snap-x mt-[30px] lg:mt-[50px]"
+        >
+          <!-- testimonail 1 -->
+          <div
+            class="py-[18px] px-4 w-[327px] h-[200px] grid gap-[18px] snap-center"
+          >
+            <div>
+              <img src="./assets/quote-up.svg" alt="" />
+            </div>
+
+            <p class="text-[#AFADB5] font-light italic text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              provident dolores fugit, et nobis quis tempora. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-[14px]">
+                <div class="w-7 h-7">
+                  <img src="./assets/testimonial 1.svg" alt="" />
+                </div>
+
+                <h1 class="font-bold text-sm">Janne Cooper</h1>
+              </div>
+
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/testimonial star.svg" alt="" />
+
+                <p class="font-bold text-sm">4.3</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- testimonial 2 -->
+
+          <div
+            class="py-[18px] px-4 w-[327px] h-[200px] grid gap-[18px] snap-center"
+          >
+            <div>
+              <img src="./assets/quote-up.svg" alt="" />
+            </div>
+
+            <p class="text-[#AFADB5] font-light italic text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              provident dolores fugit, et nobis quis tempora. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-[14px]">
+                <div class="w-7 h-7">
+                  <img src="./assets/testimonial 2.svg" alt="" />
+                </div>
+
+                <h1 class="font-bold text-sm">Loyd Ford</h1>
+              </div>
+
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/testimonial star.svg" alt="" />
+
+                <p class="font-bold text-sm">4.0</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- testimonial 3 -->
+
+          <div
+            class="py-[18px] px-4 w-[327px] h-[200px] grid gap-[18px] snap-center"
+          >
+            <div>
+              <img src="./assets/quote-up.svg" alt="" />
+            </div>
+
+            <p class="text-[#AFADB5] font-light italic text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              provident dolores fugit, et nobis quis tempora. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-[14px]">
+                <div class="w-7 h-7">
+                  <img src="./assets/testimonial 3.svg" alt="" />
+                </div>
+
+                <h1 class="font-bold text-sm">Cynthia Gray</h1>
+              </div>
+
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/testimonial star.svg" alt="" />
+
+                <p class="font-bold text-sm">3.9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- articles -->
+      <section id="articles" class="pt-[100px] lg:pt-[180px]">
+        <!-- articles -->
+        <div class="grid lg:grid-flow-col gap-5">
+          <div>
+            <div>
+              <p class="text-[#FFB23F] text-sm font-bold lg:text-lg">Article</p>
+
+              <h1
+                class="font-bold text-2xl lg:text-[44px] lg:mt-[14px] lg:mb-[30px] leading-[30px] lg:leading-[60px] lg:w-3/4"
+              >
+                The best furniture comes from Lalasia
+              </h1>
+
+              <p
+                class="text-[#AFADB5] font-light italic text-sm mb-[30px] lg:text-lg mt-4 lg:mt-[30px]"
+              >
+                Pellentesque etiam blandit in tincidunt at donec.
+              </p>
+            </div>
+            <!-- main article -->
+            <article
+              id="article"
+              class="w-[327px] h-[200px] pt-[72px] bg-center px-[14px] lg:w-fit lg:h-fit lg:bg-no-repeat lg:pt-[360px] lg:px-[26px]"
+            >
+              <div class="grid gap-[6px]">
+                <h1 class="text-white font-light text-xs lg:text-lg">
+                  Tips and Tricks
+                </h1>
+
+                <h2 class="font-bold text-white text-base lg:text-[26px]">
+                  Create Cozy Dining Room Vibes
+                </h2>
+
+                <p class="italic font-light text-sm text-white lg:text-lg">
+                  Decorating with neutrals brings balance to the...
+                </p>
+              </div>
+
+              <div class="mt-3">
+                <a
+                  href="#"
+                  class="font-light text-white text-xs lg:text-lg italic"
+                >
+                  Read More
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid gap-5 lg:pt-10">
+            <!-- second article -->
+            <a href="#">
+              <article class="flex items-center gap-[14px]">
+                <div class="w-[110px] h-[110px] lg:w-[200px] lg:h-[200px]">
+                  <img src="./assets/Rectangle 20.png" alt="" />
+                </div>
+
+                <div
+                  class="w-[203px] h-[106px] grid gap-4 lg:w-[329px] lg:h-[205px]"
+                >
+                  <div class="grid gap-1">
+                    <p
+                      class="font-bold text-xs text-[#AFADB5] lg:text-lg lg:italic lg:font-light"
+                    >
+                      Tips and Tricks
+                    </p>
+
+                    <h1 class="font-bold text-base lg:text-2xl">
+                      6 ways to give your home minimalistic vibes
+                    </h1>
+                  </div>
+
+                  <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-[6px]">
+                      <div class="w-[18px] h-[18px]">
+                        <img src="./assets/a-2-image lg.svg" alt="" />
+                      </div>
+
+                      <h1 class="font-bold text-xs lg:text-lg">
+                        By Jerremy Jean
+                      </h1>
+                    </div>
+
+                    <p
+                      class="hidden lg:block font-light italic text-sm text-[#AFADB5]"
+                    >
+                      Friday, 1 April 2022
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- third article -->
+            <a href="#">
+              <article class="flex items-center gap-[14px]">
+                <div class="w-[110px] h-[110px] lg:w-[200px] lg:h-[200px]">
+                  <img src="./assets/Rectangle 21.png" alt="" />
+                </div>
+
+                <div
+                  class="w-[203px] h-[106px] grid gap-4 lg:w-[329px] lg:h-[205px]"
+                >
+                  <div class="grid gap-1">
+                    <p
+                      class="font-bold text-xs text-[#AFADB5] lg:text-lg lg:italic lg:font-light"
+                    >
+                      Design Inspiration
+                    </p>
+
+                    <h1 class="font-bold text-base lg:text-2xl">
+                      How to make your interiors cooler
+                    </h1>
+                  </div>
+
+                  <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-[6px]">
+                      <div class="w-[18px] h-[18px]">
+                        <img src="./assets/a-3-image lg.svg" alt="" />
+                      </div>
+
+                      <h1 class="font-bold text-xs lg:text-lg">
+                        By Michaela Augus
+                      </h1>
+                    </div>
+
+                    <p
+                      class="hidden lg:block font-light italic text-sm text-[#AFADB5]"
+                    >
+                      Friday, 1 April 2022
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- fourth article -->
+            <a href="#">
+              <article class="flex items-center gap-[14px]">
+                <div class="w-[110px] h-[110px] lg:w-[200px] lg:h-[200px]">
+                  <img src="./assets/Rectangle 22.png" alt="" />
+                </div>
+
+                <div
+                  class="w-[203px] h-[106px] grid gap-4 lg:w-[329px] lg:h-[205px]"
+                >
+                  <div class="grid gap-1">
+                    <p
+                      class="font-bold text-xs text-[#AFADB5] lg:text-lg lg:italic lg:font-light"
+                    >
+                      Tips and Trick
+                    </p>
+
+                    <h1 class="font-bold text-base lg:text-2xl">
+                      Elements to add character to your space
+                    </h1>
+                  </div>
+
+                  <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-[6px]">
+                      <div class="w-[18px] h-[18px]">
+                        <img src="./assets/a-4-image lg.svg" alt="" />
+                      </div>
+
+                      <h1 class="font-bold text-xs lg:text-lg">
+                        By Kim Gurameh
+                      </h1>
+                    </div>
+
+                    <p
+                      class="hidden lg:block font-light italic text-sm text-[#AFADB5]"
+                    >
+                      Friday, 1 April 2022
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="mt-[100px] lg:mt-[140px] grid gap-5 lg:grid-flow-col lg:justify-between lg:items-center"
+      >
+        <!-- learn more -->
+        <h3 class="font-bold text-2xl lg:text-[44px]">
+          Join us to get a special discount
+        </h3>
+        <div
+          class="flex items-center gap-[10px] lg:gap-[18px] px-[44px] py-[15px] bg-[#518581] w-fit hover:bg-[#2c5f5b]"
+        >
+          <a href="#" class="font-bold text-sm lg:text-lg text-white">
+            Learn More
+          </a>
+          <img src="./assets/arrow-right.svg" alt="" />
+        </div>
+      </section>
+
+      <hr class="mt-[100px] lg:mt-[140px]" />
+    </main>
+
+    <footer class="mt-5 lg:mt-10 mx-[24px] lg:mx-24 mb-10">
+      <div>
+        <img src="./assets/logo.svg" alt="" />
+
+        <p class="font-light text-sm italic pt-[6px] lg:text-lg">
+          Lalasia is digital agency that help you make better experience iaculis
+          cras in.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
